@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pydantic
+google-genai
+playwright
+python-multipart

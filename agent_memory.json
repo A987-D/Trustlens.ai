@@ -1,0 +1,64 @@
+{
+  "blacklisted_domains": [
+    "sbi-kyc-update.xyz",
+    "bses-bill-desk.xyz",
+    "gmap-task-bonus.top",
+    "indiapost-parcel-verify.xyz",
+    "hdfc-reward-points-redeem.click",
+    "userinyerface.com",
+    "arnaron.in",
+    "arnazon.com",
+    "hdfcbnk.com",
+    "chatgpi-pro.com",
+    "secure-bank-login.example",
+    "1drv.ms",
+    "arnazon.in",
+    "g00gle.in"
+  ],
+  "weights": {
+    "urgency_penalty": 30,
+    "unverified_tld_penalty": 55,
+    "missing_https_penalty": 20,
+    "brand_spoof_penalty": 75,
+    "vague_bait_penalty": 55,
+    "collect_trap_penalty": 50
+  },
+  "few_shot_lessons": [
+    "Note saying 'Refund/Cashback' while action button says 'Pay' is ALWAYS a High Risk UPI Collect Scam.",
+    "Electricity disconnection warnings at night with personal 10-digit numbers are ALWAYS High Risk Vishing scams.",
+    "Legitimate bank OTP messages that say 'Do not share this OTP' without sketchy links are SAFE (Low Risk).",
+    "Calibrated false_negative on input: https://userinyerface.com",
+    "Calibrated false_positive on input: 5 million usd credited, click here",
+    "Calibrated false_negative on input: http://arnaron.in",
+    "Calibrated false_negative on input: 5 million usd credited, click here"
+  ],
+  "metrics": {
+    "tp": 40,
+    "tn": 18,
+    "fp": 0,
+    "fn": 0,
+    "auto_fp_corrected": 7,
+    "auto_fn_caught": 21
+  },
+  "auto_audit_log": [
+    "[AUTO-FN CAUGHT] Deep DOM/Homoglyph caught stealthy threat: 'arnazon.com'",
+    "[AUTO-FN CAUGHT] Deep DOM/Homoglyph caught stealthy threat: 'hdfcbnk.com'",
+    "[AUTO-FN CAUGHT] Deep DOM/Homoglyph caught stealthy threat: 'Courier Delivery Agent: Sir your Amazon parcel is '",
+    "[AUTO-FP FIXED] Verified safe inside DOM/Context: '482910 is your One Time Password (OTP) for netbanking l'",
+    "[AUTO-FP FIXED] Verified safe inside DOM/Context: 'Paid ₹120.00 to Mother Dairy Booth via UPI Ref No 62819'",
+    "[AUTO-FP FIXED] Verified safe inside DOM/Context: 'https://chatgpt.com'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: 'arnazon.com'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: '5M credited to your account, click here'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: 'chatgpi-pro.com'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: 'hdfcbnk.com'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: 'Courier Delivery Agent: Sir your Amazon parcel is '",
+    "[AUTO-FP FIXED] Verified safe context, suppressed false alarm: '482910 is your One Time Password (OTP) for netbanking l'",
+    "[AUTO-FP FIXED] Verified safe context, suppressed false alarm: 'Paid ₹120.00 to Mother Dairy Booth via UPI Ref No 62819'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: 'secure-bank-login.example'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: '1drv.ms'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: 'arnazon.in'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: 'g00gle.in'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: 'your mother has met with an accident,send me 5000R'",
+    "[AUTO-FN CAUGHT] Caught stealthy/vague threat: 'your mother has met an accident, please send 5000R'"
+  ]
+}
